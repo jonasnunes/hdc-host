@@ -91,4 +91,82 @@ body {
   margin-bottom: 0;
 }
 
+.planos-header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-bottom: 6rem;
+}
+.planos-header h2 {
+  font-size: 2.4rem;
+}
+.planos-header p {
+  font-size: 1.2rem;
+  color: #70747a;
+  padding-bottom: 2rem;
+}
+.planos-cards {
+  position: relative;
+  width: 90%;
+  margin: auto;
+  padding-bottom: 7.5rem;
+}
+.planos-cards header {
+  background-color: #232a31;
+  padding: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #fff;
+}
+.planos-cards header .topo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 300;
+  position: absolute;
+  left: 50%;
+  top: -4%;
+  transform: translate(-50%, -50%);
+  background-color: #2cc76a;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+.planos-cards header .diferenciado {
+  background-color: #ef3f29;
+}
+.planos-cards section {
+  background-color: #d5d5d5;
+}
+.planos-cards section ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  padding: 2rem;
+  text-align: center;
+}
+.planos-cards button {
+  background-color: #2cc76a;
+  padding: 2rem;
+  width: 100%;
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.planos-cards button:hover {
+  background-color: #22bb5f;
+}
+.planos-cards #button {
+  background-color: #ef3f29;
+  transition: 0.5s;
+}
+.planos-cards #button:hover {
+  opacity: 0.9;
+}
+
 /*# sourceMappingURL=index.css.map */

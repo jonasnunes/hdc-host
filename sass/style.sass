@@ -88,3 +88,82 @@ body
     
     .cards:nth-last-child
         margin-bottom: 0
+
+.planos
+    &-header
+        text-align: center
+        display: flex
+        flex-direction: column
+        gap: 2rem
+        padding-bottom: 6rem
+
+        h2
+            font-size: 2.4rem
+        
+        p
+            font-size: 1.2rem
+            color: variables.$color-paragraph
+            padding-bottom: 2rem
+    
+    &-cards
+        position: relative
+        width: 90%
+        margin: auto
+        padding-bottom: 7.5rem
+        
+        header
+            background-color: variables.$bg-navbar
+            padding: 3rem
+            text-align: center
+            text-transform: uppercase
+            font-weight: 700
+            font-size: 1.2rem
+            color: #fff
+
+            .topo 
+                display: flex
+                align-items: center
+                justify-content: center
+                font-weight: 300
+
+                position: absolute
+                left: 50%
+                top: -4%
+                transform: translate(-50%, -50%)
+                background-color: variables.$bg-btn
+                width: 120px
+                height: 120px
+                border-radius: 50%
+            
+            .diferenciado
+                background-color: variables.$fa-rocket
+        
+        section
+            background-color: variables.$color-section-domain
+            
+            ul
+                display: flex
+                flex-direction: column
+                gap: 1.8rem
+                padding: 2rem
+                text-align: center
+        
+        button
+            background-color: variables.$bg-btn
+            padding: 2rem
+            width: 100%
+            font-size: 1.3rem
+            letter-spacing: .1rem
+            color: #fff
+            cursor: pointer
+            transition: .5s
+        
+        button:hover
+            background-color: variables.$bg-btn-hover
+
+        #button
+            background-color: variables.$fa-rocket
+            transition: .5s
+
+        #button:hover
+            opacity: .9
