@@ -58,4 +58,37 @@ body {
   line-height: 150%;
 }
 
+.skills {
+  width: 80%;
+  margin: auto;
+  padding-block: 6rem;
+}
+.skills .cards {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+.skills p {
+  font-weight: 300;
+  line-height: 150%;
+  color: #70747a;
+}
+.skills .fas {
+  font-size: 3.3rem;
+}
+.skills .fa-shield-alt {
+  color: #2cc76a;
+}
+.skills .fa-rocket {
+  color: #ef3f29;
+}
+.skills .fa-comments {
+  color: #ef8f29;
+}
+.skills .cards:nth-last-child {
+  margin-bottom: 0;
+}
+
 /*# sourceMappingURL=index.css.map */
