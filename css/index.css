@@ -17,4 +17,23 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1.2rem 1.4rem;
+  background-color: #232a31;
+}
+header nav ul {
+  display: flex;
+}
+header nav ul li a {
+  margin-right: 1rem;
+  color: #fff;
+  transition: 0.4s;
+}
+header nav ul a:hover {
+  color: #70747a;
+}
+
 /*# sourceMappingURL=index.css.map */
