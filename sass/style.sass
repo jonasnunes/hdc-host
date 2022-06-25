@@ -85,6 +85,8 @@ body
         margin-bottom: 0
 
 .planos
+    margin-top: -3rem
+
     &-header
         text-align: center
         @include mixins.flex
@@ -209,6 +211,8 @@ body
         font-size: 1.2rem
         line-height: 150%
         padding-bottom: 1rem
+        color: variables.$color-paragraph
+        font-weight: 300
 
     form
         @include mixins.flex
@@ -231,3 +235,9 @@ body
         
         input[type="submit"]:hover
             background-color: variables.$bg-btn-hover
+
+.footer
+    text-align: center
+    padding: .5rem 3rem 3rem
+    font-weight: 700
+    color: variables.$color-paragraph

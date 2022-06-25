@@ -91,6 +91,9 @@ body {
   margin-bottom: 0;
 }
 
+.planos {
+  margin-top: -3rem;
+}
 .planos-header {
   text-align: center;
   display: flex;
@@ -226,6 +229,8 @@ body {
   font-size: 1.2rem;
   line-height: 150%;
   padding-bottom: 1rem;
+  color: #70747a;
+  font-weight: 300;
 }
 .contato form {
   display: flex;
@@ -250,6 +255,13 @@ body {
 }
 .contato form input[type=submit]:hover {
   background-color: #22bb5f;
+}
+
+.footer {
+  text-align: center;
+  padding: 0.5rem 3rem 3rem;
+  font-weight: 700;
+  color: #70747a;
 }
 
 /*# sourceMappingURL=index.css.map */
