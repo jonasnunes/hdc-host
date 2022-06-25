@@ -16,16 +16,18 @@ body
     width: 100vw
     height: 100vh
     font-family: 'Montserrat', sans-serif
+    max-width: 1440px
 
 .header
     display: flex
     align-items: center
-    justify-content: space-around
+    justify-content: space-between
     padding: .8rem .5rem
     background-color: variables.$bg-navbar
 
     nav ul
         display: flex
+        align-items: center
 
         li a
             margin-right: 1rem
@@ -34,6 +36,22 @@ body
 
         a:hover 
             color: variables.$color-paragraph
+
+        li button
+            padding: 1.5rem
+            height: 50px
+            text-transform: uppercase
+            background-color: variables.$bg-btn
+            color: #fff
+            display: flex
+            align-items: center
+            border-radius: .5rem
+            font-size: 1rem
+            cursor: pointer
+            transition: .5s
+        
+        li button:hover
+            background-color: variables.$bg-btn-hover
 
 .bg-section
     @include mixins.flex-center
@@ -58,6 +76,10 @@ body
     width: 80%
     margin: auto
     padding-block: 6rem
+
+    @include mixins.responsivo 
+        display: flex
+        gap: 2rem
 
     .cards
         text-align: center
@@ -101,11 +123,19 @@ body
             color: variables.$color-paragraph
             padding-bottom: 2rem
     
+    .container
+        @include mixins.responsivo 
+            display: flex
+            flex-wrap: wrap
+    
     &-cards
         position: relative
         width: 90%
         margin: auto
         padding-bottom: 7.5rem
+
+        @include mixins.responsivo 
+            width: 40%
         
         header
             background-color: variables.$bg-navbar
@@ -186,11 +216,20 @@ body
             font-size: 1.2rem
             border-radius: .5rem
         
+        input[type="text"]
+            @include mixins.responsivo 
+                width: 80%
+                margin: auto
+        
         input[type="submit"]
             background-color: variables.$bg-btn 
             color: #fff
             cursor: pointer
             transition: .5s
+
+            @include mixins.responsivo 
+                width: 60%
+                margin: auto
         
         input[type="submit"]:hover
             background-color: variables.$bg-btn-hover
@@ -221,6 +260,10 @@ body
             padding: 1rem
             border: 1px solid variables.$color-section-domain
             border-radius: .5rem
+
+            @include mixins.responsivo 
+                width: 70%
+                margin: auto
         
         textarea
             resize: none

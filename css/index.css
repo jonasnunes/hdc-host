@@ -15,17 +15,19 @@ body {
   width: 100vw;
   height: 100vh;
   font-family: "Montserrat", sans-serif;
+  max-width: 1440px;
 }
 
 .header {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 0.8rem 0.5rem;
   background-color: #232a31;
 }
 .header nav ul {
   display: flex;
+  align-items: center;
 }
 .header nav ul li a {
   margin-right: 1rem;
@@ -34,6 +36,22 @@ body {
 }
 .header nav ul a:hover {
   color: #70747a;
+}
+.header nav ul li button {
+  padding: 1.5rem;
+  height: 50px;
+  text-transform: uppercase;
+  background-color: #2cc76a;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.header nav ul li button:hover {
+  background-color: #22bb5f;
 }
 
 .bg-section {
@@ -62,6 +80,12 @@ body {
   width: 80%;
   margin: auto;
   padding-block: 6rem;
+}
+@media (min-width: 768px) {
+  .skills {
+    display: flex;
+    gap: 2rem;
+  }
 }
 .skills .cards {
   text-align: center;
@@ -110,11 +134,22 @@ body {
   color: #70747a;
   padding-bottom: 2rem;
 }
+@media (min-width: 768px) {
+  .planos .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 .planos-cards {
   position: relative;
   width: 90%;
   margin: auto;
   padding-bottom: 7.5rem;
+}
+@media (min-width: 768px) {
+  .planos-cards {
+    width: 40%;
+  }
 }
 .planos-cards header {
   background-color: #232a31;
@@ -201,11 +236,23 @@ body {
   font-size: 1.2rem;
   border-radius: 0.5rem;
 }
+@media (min-width: 768px) {
+  .buscar-dominio form input[type=text] {
+    width: 80%;
+    margin: auto;
+  }
+}
 .buscar-dominio form input[type=submit] {
   background-color: #2cc76a;
   color: #fff;
   cursor: pointer;
   transition: 0.5s;
+}
+@media (min-width: 768px) {
+  .buscar-dominio form input[type=submit] {
+    width: 60%;
+    margin: auto;
+  }
 }
 .buscar-dominio form input[type=submit]:hover {
   background-color: #22bb5f;
@@ -241,6 +288,12 @@ body {
   padding: 1rem;
   border: 1px solid #d5d5d5;
   border-radius: 0.5rem;
+}
+@media (min-width: 768px) {
+  .contato form input, .contato form textarea {
+    width: 70%;
+    margin: auto;
+  }
 }
 .contato form textarea {
   resize: none;
