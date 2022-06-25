@@ -1,4 +1,5 @@
 @use 'variables'
+@use 'mixins'
     
 *
     margin: 0
@@ -35,11 +36,7 @@ body
             color: variables.$color-paragraph
 
 .bg-section
-    display: flex 
-    flex-direction: column
-    justify-content: center
-    align-items: center
-    gap: 1rem
+    @include mixins.flex-center
 
     color: variables.$color-section-domain
     text-align: center
@@ -64,9 +61,7 @@ body
 
     .cards
         text-align: center
-        display: flex
-        flex-direction: column
-        gap: 1.5rem
+        @include mixins.flex
         margin-bottom: 3rem
 
     p
@@ -92,8 +87,7 @@ body
 .planos
     &-header
         text-align: center
-        display: flex
-        flex-direction: column
+        @include mixins.flex
         gap: 2rem
         padding-bottom: 6rem
 
@@ -142,9 +136,7 @@ body
             background-color: variables.$color-section-domain
             
             ul
-                display: flex
-                flex-direction: column
-                gap: 1.8rem
+                @include mixins.flex
                 padding: 2rem
                 text-align: center
         
@@ -167,3 +159,36 @@ body
 
         #button:hover
             opacity: .9
+
+.buscar-dominio
+    background-color: variables.$bg-section
+    padding: 3rem 2rem
+    margin-top: -2rem
+    text-align: center
+    @include mixins.flex
+
+    h2
+        color: #fff
+        font-size: 2.5rem
+
+    p
+        color: variables.$color-section-domain
+        font-size: 1.4rem
+
+    form
+        @include mixins.flex
+
+        input
+            padding: 1.5rem
+            text-align: center
+            font-size: 1.2rem
+            border-radius: .5rem
+        
+        input[type="submit"]
+            background-color: variables.$bg-btn 
+            color: #fff
+            cursor: pointer
+            transition: .5s
+        
+        input[type="submit"]:hover
+            background-color: variables.$bg-btn-hover

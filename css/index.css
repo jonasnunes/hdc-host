@@ -95,6 +95,7 @@ body {
   text-align: center;
   display: flex;
   flex-direction: column;
+  gap: 1.5rem;
   gap: 2rem;
   padding-bottom: 6rem;
 }
@@ -144,7 +145,7 @@ body {
 .planos-cards section ul {
   display: flex;
   flex-direction: column;
-  gap: 1.8rem;
+  gap: 1.5rem;
   padding: 2rem;
   text-align: center;
 }
@@ -167,6 +168,44 @@ body {
 }
 .planos-cards #button:hover {
   opacity: 0.9;
+}
+
+.buscar-dominio {
+  background-color: #34454e;
+  padding: 3rem 2rem;
+  margin-top: -2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.buscar-dominio h2 {
+  color: #fff;
+  font-size: 2.5rem;
+}
+.buscar-dominio p {
+  color: #d5d5d5;
+  font-size: 1.4rem;
+}
+.buscar-dominio form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.buscar-dominio form input {
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+}
+.buscar-dominio form input[type=submit] {
+  background-color: #2cc76a;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.buscar-dominio form input[type=submit]:hover {
+  background-color: #22bb5f;
 }
 
 /*# sourceMappingURL=index.css.map */
