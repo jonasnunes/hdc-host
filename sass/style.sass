@@ -192,3 +192,42 @@ body
         
         input[type="submit"]:hover
             background-color: variables.$bg-btn-hover
+
+.contato
+    width: 90%
+    margin: auto
+    padding: 6rem 1rem
+    @include mixins.flex
+
+    h2, p
+        text-align: center
+    
+    h2
+        font-size: 1.8rem
+
+    p
+        font-size: 1.2rem
+        line-height: 150%
+        padding-bottom: 1rem
+
+    form
+        @include mixins.flex
+
+        input, textarea
+            padding: 1rem
+            border: 1px solid variables.$color-section-domain
+            border-radius: .5rem
+        
+        textarea
+            resize: none
+        
+        input[type="submit"]
+            background-color: variables.$bg-btn
+            font-size: 1rem
+            color: #fff
+            border: none
+            cursor: pointer
+            transition: .5s
+        
+        input[type="submit"]:hover
+            background-color: variables.$bg-btn-hover
